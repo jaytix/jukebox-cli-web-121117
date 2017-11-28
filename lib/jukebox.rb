@@ -32,9 +32,8 @@ def play(songs)
     input = gets.chomp
     if input == song || input.to_i == (index + 1)
       puts "Playing #{song}"
-      return "Playing #{song}"
     else
-      return "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
   end
 end
