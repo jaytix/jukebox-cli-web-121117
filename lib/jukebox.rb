@@ -31,6 +31,7 @@ def play(songs)
     puts "Please enter a song name or number:"
     input = gets.chomp
     if input == song || input.to_i == (index + 1)
+      binding.pry
       puts "Playing #{song}"
     else
       puts "Invalid input, please try again"
