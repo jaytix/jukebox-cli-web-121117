@@ -32,10 +32,11 @@ def play(songs)
   songs.each_with_index do |song, index|
     #binding.pry
     if input == song || input.to_i == (index + 1)
-      puts "Playing #{song}"
+      return "Playing #{song}"
     end
   end
-  puts "Invalid input, please try again"
+
+  return "Invalid input, please try again"
 end
 
 def exit_jukebox
