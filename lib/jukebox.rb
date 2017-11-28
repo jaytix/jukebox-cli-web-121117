@@ -31,7 +31,6 @@ def play(songs)
   input = gets.chomp
   binding.pry
   songs.each_with_index do |song, index|
-    binding.pry
     if input == song || (index + 1)
       puts "Playing #{song}"
       return "Playing #{song}"
