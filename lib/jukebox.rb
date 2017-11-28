@@ -34,10 +34,10 @@ def play(songs)
     if input == song || input.to_i == (index + 1)
       puts "Playing #{song}"
     end
-  end
     if input != song || input.to_i == (index + 1)
       puts "Invalid input, please try again"
     end
+  end
 end
 
 def exit_jukebox
