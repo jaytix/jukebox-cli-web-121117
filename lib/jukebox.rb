@@ -27,7 +27,7 @@ def list(songs)
 end
 
 def play(songs)
-  self.each_with_index do |song, index|
+  songs.each_with_index do |song, index|
     puts "Please enter a song name or number:"
     input = gets.chomp
     if input == song || (index + 1)
